@@ -1076,3 +1076,38 @@ INSERT INTO `t_tree_hole` VALUES (30, 1, '记得一定要快乐啊！！', 1, '2
 INSERT INTO `t_tree_hole` VALUES (34, 1, '天天开心', 1, '2024-01-19 21:33:24', '2024-01-19 21:33:24', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+-- ------------------------------------------- 2 tab for t from v1.5 -------------------------------------------
+-- ----------------------------
+-- Table structure for t_banners
+-- ----------------------------
+/*DROP TABLE IF EXISTS `t_banners`;
+CREATE TABLE `t_banners`  (
+                              `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键id',
+                              `path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '图片路径',
+                              `size` bigint NOT NULL COMMENT '图片大小 (字节)',
+                              `type` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '图片类型 (MIME)',
+                              `user_id` bigint NOT NULL COMMENT '上传人id',
+                              `sort_order` int NOT NULL COMMENT '图片顺序',
+                              `create_time` datetime NOT NULL COMMENT '创建时间',
+                              PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Table structure for t_black_list
+-- ----------------------------
+DROP TABLE IF EXISTS `t_black_list`;
+CREATE TABLE `t_black_list`  (
+                                 `id` bigint NOT NULL AUTO_INCREMENT COMMENT '表id',
+                                 `user_id` bigint NULL DEFAULT NULL COMMENT '用户id',
+                                 `reason` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '封禁理由',
+                                 `banned_time` datetime NOT NULL COMMENT '封禁时间',
+                                 `expires_time` datetime NOT NULL COMMENT '到期时间',
+                                 `type` tinyint NOT NULL COMMENT '类型（1：用户，2：路人/攻击者）',
+                                 `ip_info` json NULL COMMENT '如果type=2，则需要有ip信息',
+                                 `create_time` datetime NOT NULL COMMENT '创建时间',
+                                 `update_time` datetime NOT NULL COMMENT '更新时间',
+                                 `is_deleted` tinyint NOT NULL DEFAULT 0 COMMENT '是否删除（0：未删除，1：已删除）',
+                                 PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 257 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = DYNAMIC;*/

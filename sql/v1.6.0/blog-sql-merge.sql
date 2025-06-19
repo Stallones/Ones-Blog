@@ -1,3 +1,6 @@
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- ------------------------------------------- 11 tab for qrtz -------------------------------------------
 -- ----------------------------
 -- Table structure for QRTZ_JOB_DETAILS
